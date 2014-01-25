@@ -10,6 +10,18 @@
     <div id="main">
       <div id="header">
         <div class="banner">Loft in Space</div>
+        <div id="nav">
+          <nav id="main-nav">
+            <ul>
+              <li>
+                <a href="/about.html">About</a>
+              </li>
+              <li>
+                <a href="/">Blog</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
       <div class="hr"></div>
       <div id="body">
@@ -17,7 +29,18 @@
           <h1 class="title">
             <a href="publishing-scala-libraries-to-sonatype.html">Publishing Scala libraries to Sonatype</a>
           </h1>
-          <div class="pubDate">25 January 2013</div>
+          <div id="meta">
+            <div class="pubDate">
+              <i class="fa fa-calendar"></i>
+              <span class="date">25 January 2013</span>
+            </div>
+            <div class="tags">
+              <i class="fa fa-tags"></i>
+              <span class="tag">scala</span>
+              <span class="tag">sbt</span>
+              <span class="tag">sonatype</span>
+            </div>
+          </div>
           <div class="body">
 <p>You have a scala library that others might find useful. You build it with SBT and you want to publish it to an online repository so that others can use it in their projects. Wonderful! </p><p>This post will explain the process of publishing your project artefacts to the <a href="http://oss.sonatype.org/">Sonatype OSSRH (OSS Repository Hosting Service)</a>.</p><h2>Summary</h2>
 <ol>
@@ -89,11 +112,6 @@ INF: [console logger] dispatch: pool.sks-keyservers.net POST /pks/add HTTP/1.1
   <li>Creating a JSON file to the project meta-data, commiting this to your project and pushing it; and</li>
   <li>Poking the LS process with curl to ensure it reads this file.</li>
 </ol><p>Taking it further, you can enable an SBT plugin to automate these steps. See the <a href="http://ls.implicit.ly/#publishing">ls guide to publishing</a> for instructions.</p><p>That's it. Was that a bit onerous? I hope it was not too difficult. Let us know in the comments how you went.</p>          </div>
-          <div class="tags">
-            <span class="tag">scala</span>
-            <span class="tag">sbt</span>
-            <span class="tag">sonatype</span>
-          </div>
         </div>
       </div>
     </div>
