@@ -47,7 +47,7 @@
             </div>
           </div>
           <div id="copy" class="copy">
-<p>You have a scala library that others might find useful. You build it with SBT and you want to publish it to an online repository so that others can use it in their projects. Wonderful! </p><p>This post will explain the process of publishing your project artefacts to the <a href="http://oss.sonatype.org/">Sonatype OSSRH (OSS Repository Hosting Service)</a>.</p><h2>Summary</h2>
+<p>You have a scala library that others might find useful. You build it with SBT and you want to publish it to an online repository so that others can use it in their projects. Wonderful! </p><p>This post explains the process of publishing your project artefacts to the <a href="http://oss.sonatype.org/">Sonatype OSSRH (OSS Repository Hosting Service)</a>.</p><h2>Summary</h2>
 <ol>
   <li><a href="#install_pgp_plugin">Install SBT PGP Plugin</a></li>
   <li><a href="#get_an_identity">Get an identity</a></li>
@@ -60,7 +60,7 @@
   <li><a href="#publish_release">Publish release</a></li>
   <li><a href="#enable_sync">Enable sync</a></li>
   <li>(optional) <a href="#announce_ls">Announce on ls</a></li>
-</ol><p><a name="install_pgp_plugin"></a> </p><h2>1. Install SBT PGP Plugin</h2><p><em>Frequency: once</em> </p><p>This plugin is needed for signing the artefacts, and can also be used to generate keys.</p><p>Install the SBT PGP Plugin using <a href="http://www.scala-sbt.org/sbt-pgp/">these instructions</a>. Note that this documentation suggests creating the file <code>~/.sbt/plugins/gpg.sbt</code>, however your SBT config may be in another location. If you are using v0.13 then you should check for config in <code>~/.sbt/0.13/plugins/</code>.</p><p><a name="get_an_identity"></a></p><h2>2. Get an identity</h2><p><em>Frequency: once</em> </p><p>For Sonatype to trust your artefacts are genuinely from you, they will need to be signed. You will need to have a PGP key pair and publish the public key to a public key server pool.</p>
+</ol><p><a name="install_pgp_plugin"></a> </p><h2>1. Install SBT PGP Plugin</h2><p><em>Frequency: once</em> </p><p>This plugin is needed for signing the artefacts, and can also be used to generate keys.</p><p>Install the SBT PGP Plugin using <a href="http://www.scala-sbt.org/sbt-pgp/">these instructions</a>. Note that this documentation suggests creating the file <code>~/.sbt/plugins/gpg.sbt</code>, however your SBT config may be in another location. If you are using v0.13, check for config in <code>~/.sbt/0.13/plugins/</code>.</p><p><a name="get_an_identity"></a></p><h2>2. Get an identity</h2><p><em>Frequency: once</em> </p><p>For Sonatype to trust your artefacts are genuinely from you, they will need to be signed. You will need to have a PGP key pair and publish the public key to a public key server pool.</p>
 <blockquote><p><i class="fa fa-info-circle"></i> Actually, Sonatype require that the artefacts be signed, but they don't use it for trust. Instead <a href="http://stackoverflow.com/questions/21200445/how-does-sonatype-authentication-of-packages-work/21238009?noredirect=1#21238009">they use user/password authentication with a checksum to protect against modification</a>. For our purposes all we need to know is that our artefacts need signing.</p>
 </blockquote><h3>Generating a key pair</h3>
 <blockquote><p><i class="fa fa-info-circle"></i> If you already have a PGP key pair that you wish to use, you can skip this step.</p>
@@ -76,7 +76,7 @@
 pgp-cmd gen-key
 </code></pre><p>Follow the prompts. See the <a href="http://www.scala-sbt.org/sbt-pgp/usage.html">SBT PGP plugin usage page</a> for more details.</p><h3>Publishing your key</h3>
 <blockquote><p><i class="fa fa-info-circle"></i> If you have a key pair and have already published your public key you can skip this step. If you are unsure about whether you have published in the past you can check with the GPG executable: <code>gpg --search-keys &lt;name|id&gt;</code>. In fact, here's a cute way to pipe the id into your search directly: <code>gpg --search-keys `gpg --list-keys|grep ^pub| cut -d&#39;/&#39; -f2|cut -d&#39; &#39; -f1`</code></p>
-</blockquote><p>You can send your key to a server in a public key server pool (from where it will then be synced) by using either the GPG executable or the PGP SBT Plugin.</p><p>By default both programs used the same keyring on my ubuntu 13.10 build. The GPG method is faster, uses less keystrokes/commands and lets you push more than one key at a time if wish. But both ways are pretty quick and easy.</p><h4>Publishing with GPG executable</h4><p>First identify the ID of your public key</p>
+</blockquote><p>You can send your key to a server in a public key server pool (from where it will then be synced) by using either the GPG executable or the PGP SBT Plugin.</p><p>By default both programs used the same keyring on my ubuntu 13.10 build. The GPG method is faster, uses less keystrokes/commands and lets you push more than one key at a time if you wish. But both ways are pretty quick and easy.</p><h4>Publishing with GPG executable</h4><p>First identify the ID of your public key</p>
 <pre><code>$ gpg --list-keys
 /home/jem/.gnupg/pubring.gpg
 ----------------------------
@@ -116,7 +116,7 @@ INF: [console logger] dispatch: pool.sks-keyservers.net POST /pks/add HTTP/1.1
 <ol>
   <li>Creating a JSON file to the project meta-data, commiting this to your project and pushing it; and</li>
   <li>Poking the LS process with curl to ensure it reads this file.</li>
-</ol><p>Taking it further, you can enable an SBT plugin to automate these steps. See the <a href="http://ls.implicit.ly/#publishing">ls guide to publishing</a> for instructions.</p><p>That's it. Was that a bit onerous? I hope it was not too difficult. Let us know in the comments how you went.</p>          </div>
+</ol><p>Taking it further, you can enable an SBT plugin to automate these steps. See the <a href="http://ls.implicit.ly/#publishing">ls guide to publishing</a> for instructions.</p><p>That's it. I hope these instructions have made this process easier for you. Let us know in the comments how you went.</p>          </div>
           <div id="disqus_thread"></div>
 <script type="text/javascript" src="js/disqus.js"></script>
 <noscript>
