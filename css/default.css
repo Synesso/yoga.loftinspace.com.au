@@ -90,7 +90,7 @@ body {
   float: left;
   font-size: 0.9em;
 }
-.tags {
+#meta .tail {
   margin-top: 1em;
 }
 .copy {
