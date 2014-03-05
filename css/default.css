@@ -12,21 +12,22 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1000px;
-  background-color: #f7f7f7;
+  background-color: rgba(255,255,255,0.86);
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   min-height: 100%;
-  border-left: 1px solid #c4c4c4;
-  border-right: 1px solid #c4c4c4;
+  -moz-border-radius:20px;  /* for Firefox */
+  -webkit-border-radius:20px; /* for Webkit-Browsers */
+  border-radius:20px; /* regular */
+  -webkit-box-shadow: -3px 3px 1px 1px rgba(0, 0, 0, 0.64);
+          box-shadow: -3px 3px 1px 1px rgba(0, 0, 0, 0.44);
+
 }
 #header {
   padding-top: 30px;
-  // background-image: url("./logo.png");
-  background-repeat: no-repeat;
-  background-position: right;
 }
 #main-nav {
   text-align: center;
@@ -65,12 +66,13 @@ body {
   transition: color 0.3s;
 }
 .fade-link:hover a {
-  color: #6D77C5;
+  color: #1B2DB9;
 }
 #body {
   color: #3f3f3f;
   margin-top: 30px;
 }
+
 .title {
   border-bottom: 1px solid #ddd;
   padding-bottom: .75em;
@@ -84,7 +86,7 @@ body {
   transition: color 0.3s;
 }
 .title:hover a {
-  color: #6D77C5;
+  color: #1B2DB9;
 }
 #meta {
   width: 20%;
@@ -100,10 +102,11 @@ body {
 }
 .post p {
   margin-top: 0;
+  margin-bottom: 1em;
 }
 a {
   text-decoration: none;
-  color: #6D77C5;
+  color: #1B2DB9;
   -webkit-transition: border .25s linear;
   -moz-transition: border .25s linear;
   -ms-transition: border .25s linear;
@@ -130,7 +133,7 @@ pre {
     font-size: 95%;
     line-height: 140%;
     padding: 1em 1em;
-    margin: auto 40px auto 40px;
+    margin: auto 40px 1em 40px;
     background: #f4f4f4;
     border: solid 1px #e1e1e1;
     white-space: pre;
@@ -170,4 +173,11 @@ code {
 .centred {
   float: none;
   margin: 0 auto 0 auto;
+}
+#divider {
+  clear:both;
+  border-top: dotted 3px #aaa;
+}
+#supersized img {
+  opacity: 0.4;
 }

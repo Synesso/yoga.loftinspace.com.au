@@ -2,16 +2,18 @@
 <html>
   <head>
     <title>Publishing Scala libraries to Sonatype</title>
-    <link rel="stylesheet" href="css/default.css" type="text/css"/>
+    <link rel="stylesheet" href="css/blog.css" type="text/css"/>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css"/>
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Tangerine" type="text/css"/>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Petrona|Asap:400,700" type="text/css"/>
     <script type="text/javascript" src="js/ga.js"></script>
   </head>
   <body>
     <div id="main">
       <div id="header">
-        <div class="banner logo fade-link">
-  <a href="/">Loft in Space</a>
+        <div id="logo">
+  <a href="/">
+    <img src="img/bird1.png" style="width:80px" alt="Loft in Space"/>
+  </a>
 </div>
 <div id="nav">
   <nav id="main-nav">
@@ -34,23 +36,10 @@
       <div id="body">
         <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <div class="post">
-  <h1 class="title">Publishing Scala libraries to Sonatype</h1>
-  <div id="meta">
-    <div class="pubDate">
-      <i class="fa fa-calendar"></i>
-      <span class="date">25 January 2014</span>
-    </div>
-    <div class="tail">
-      <i class="fa fa-tags"></i>
-      <span class="tag">scala</span>
-      <span class="tag">sbt</span>
-      <span class="tag">sonatype</span>
-    </div>
-    <div class="tail">
-      <i class="fa fa-pencil-square-o"></i>
-      <span class="author">by Jem Mawson</span>
-    </div>
-  </div>
+  <div id="date">25 January 2014</div>
+  <h1 class="title">
+    Publishing Scala libraries to Sonatype
+  </h1>
   <div id="copy" class="copy">
 <p>You have a scala library that others might find useful. You build it with SBT and you want to publish it to an online repository so that others can use it in their projects. Wonderful! </p><p>This post explains the process of publishing your project artefacts to the <a href="http://oss.sonatype.org/">Sonatype OSSRH (Open Source Software Repository Hosting) Service</a>.</p>
 <div id="break"/><h2>Summary</h2>
@@ -123,6 +112,22 @@ INF: [console logger] dispatch: pool.sks-keyservers.net POST /pks/add HTTP/1.1
   <li>Creating a JSON file to the project meta-data, commiting this to your project and pushing it; and</li>
   <li>Poking the LS process with curl to ensure it reads this file.</li>
 </ol><p>Taking it further, you can enable an SBT plugin to automate these steps. See the <a href="http://ls.implicit.ly/#publishing">ls guide to publishing</a> for instructions.</p><p>That's it. I hope these instructions have made this process easier for you. Let us know in the comments how you went.</p>  </div>
+  <div id="meta">
+    <div class="pubDate">
+      <i class="fa fa-calendar"></i>
+      <span class="date">25 January 2014</span>
+    </div>
+    <div class="tail">
+      <i class="fa fa-tags"></i>
+      <span class="tag">scala</span>
+      <span class="tag">sbt</span>
+      <span class="tag">sonatype</span>
+    </div>
+    <div class="tail">
+      <i class="fa fa-pencil-square-o"></i>
+      <span class="author">by Jem Mawson</span>
+    </div>
+  </div>
 </div>
 
         <div id="disqus_thread"></div>
@@ -137,6 +142,9 @@ INF: [console logger] dispatch: pool.sks-keyservers.net POST /pks/add HTTP/1.1
 </a>
 
       </div>
+    </div>
+    <div id="finalfrontier">
+      &nbsp;
     </div>
   </body>
 </html>
