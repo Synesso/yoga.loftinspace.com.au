@@ -1,12 +1,17 @@
+body {
+  font-family: 'Petrona', Georgia, serif;
+}
 #archive .year h2 {
+  font-family: 'Asap', Helvetica, sans-serif;
   width: 10%;
   float: left;
   margin-bottom: 0;
 }
 #archive .entry {
   padding-left: 10%;
-  padding-top: 1.5em;
-  margin-bottom: 1em;
+  padding-top: 1em;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
 }
 #archive .date {
   float:left;
