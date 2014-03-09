@@ -1,83 +1,23 @@
-body {
-  max-width: 1175px;
-  padding: 50px 20px 0 20px;
-  margin: 0 auto;
-}
-p {
-  font: 22px/1.5 'Petrona', Georgia, serif;
-  -webkit-font-smoothing: antialiased;
-  color: #343434;
-}
-li code {
-  font-size: 18px;
-}
-p code {
-  font-size: 18px;
-}
-h1 {
-  font-family: 'Asap', Helvetica, sans-serif;
-  font-size: 48px;
-  text-align: center;
-}
-h3 {
-  font-size: 22px;
-}
-h4 {
-  font-size: 20px;
-}
-a {
-  text-decoration: none;
-  color: rgb(218,37,29);
-}
-.title a {
-  color: black;
-}
-.title a:hover {
-  color: grey;
-}
-a:hover {
-  color: #cc5500;
-  transition: 0.3s ease-in;
-  -webkit-transition: 0.3s ease-in;
-}
-li {
-  font: 22px/1.5 'Petrona', Georgia, serif;
-  -webkit-font-smoothing: antialiased;
-  color: #343434;
-}
-.post {
-  padding: 48px 20%;
-}
-.post #date {
-  color: #d2d2d2;
-  text-align: center;
-  font: 20px 'Petrona', Georgia, serif;
-}
-#header #logo {
-  float: left;
-}
-#header #nav {
-  float:right
-}
-#header #nav li {
-  list-style: none;
-  margin: 30px 0 0 0;
-  padding: 0 10px 0 10px;
-  float: left;
-}
-#header #nav li a {
-  -webkit-font-smoothing: antialiased;
-  color: #777;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-#full-logo {
-  text-align: center;
-}
-#read-more {
-  text-align: center;
-  font: 20px 'Petrona', Georgia, serif;
-}
-pre {
-  margin: 0 30px 0 30px;
-}
+a { text-decoration: none; color: rgb(218,37,29); }
+a:hover { color: #cc5500; transition: 0.3s ease-in; -webkit-transition: 0.3s ease-in; }
+body { max-width: 1175px; padding: 50px 20px 0 20px; margin: 0 auto; }
+h1 { font-family: 'Asap', Helvetica, sans-serif; font-size: 48px; text-align: center; }
+h3 { font-size: 22px; }
+h4 { font-size: 20px; }
+li code { font-size: 18px; }
+li { font: 22px/1.5 'Petrona', Georgia, serif; -webkit-font-smoothing: antialiased; color: #343434; }
+p code { font-size: 18px; }
+p { font: 22px/1.5 'Petrona', Georgia, serif; -webkit-font-smoothing: antialiased; color: #343434; }
+pre { margin: 0 30px 0 30px; }
+
+#full-logo { text-align: center; }
+#header #logo { float: left; }
+#header #nav { float:right }
+#header #nav li a { -webkit-font-smoothing: antialiased; color: #777; text-transform: uppercase; text-decoration: none; }
+#header #nav li { list-style: none; margin: 30px 0 0 0; padding: 0 10px 0 10px; float: left; }
+#read-more { text-align: center; font: 20px 'Petrona', Georgia, serif; }
+
+.post #date { color: #d2d2d2; text-align: center; font: 20px 'Petrona', Georgia, serif; }
+.post { padding: 48px 20%; }
+.title a { color: black; }
+.title a:hover { color: grey; }
