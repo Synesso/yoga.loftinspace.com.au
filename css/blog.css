@@ -1,9 +1,10 @@
 a { text-decoration: none; color: #dd574c; }
-a:hover { color: #ff9933; transition: 0.3s ease-in; -webkit-transition: 0.3s ease-in; }
+a:hover { color: #dd924c; transition: 0.3s ease-in; -webkit-transition: 0.3s ease-in; }
 body { max-width: 1175px; padding: 50px 20px 0 20px; margin: 0 auto; }
 h1 { font-family: 'Asap', Helvetica, sans-serif; font-size: 48px; text-align: center; }
 h3 { font-size: 22px; }
 h4 { font-size: 20px; }
+img { border-width: 0; }
 li code { font-size: 18px; }
 li { font: 22px/1.5 'Petrona', Georgia, serif; -webkit-font-smoothing: antialiased; color: #343434; }
 p code { font-size: 18px; }
