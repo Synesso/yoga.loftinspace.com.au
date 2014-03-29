@@ -1,9 +1,0 @@
-.round-photo {
-  float: right;
-  width: 250px;
-  height: 250px;
-  border-radius: 125px;;
-  -webkit-border-radius: 125px;;
-  -moz-border-radius: 125px;;
-  background: url(/img/jem.jpg) no-repeat;
-}
