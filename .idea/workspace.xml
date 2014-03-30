@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35c54faa-65b0-4d58-8a6b-e6accdf85cef" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/default.css" afterPath="$PROJECT_DIR$/css/default.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/super-image.js" afterPath="$PROJECT_DIR$/js/super-image.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/supersized.core.3.2.1.min.js" afterPath="$PROJECT_DIR$/js/supersized.core.3.2.1.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="yoga.loftinspace.com.au.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="35c54faa-65b0-4d58-8a6b-e6accdf85cef" time="1396180811742" ignored="false" />
+    <file path="/Dummy.txt" changelist="35c54faa-65b0-4d58-8a6b-e6accdf85cef" time="1396180820204" ignored="false" />
     <file path="/index.html" changelist="35c54faa-65b0-4d58-8a6b-e6accdf85cef" time="1396180488272" ignored="false" />
     <file path="/default.css" changelist="35c54faa-65b0-4d58-8a6b-e6accdf85cef" time="1396179775201" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" changelist="35c54faa-65b0-4d58-8a6b-e6accdf85cef" time="1396180798029" ignored="false" />
@@ -77,7 +74,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="0" selection-start="1001" selection-end="2647" vertical-scroll-proportion="1.5297505">
+            <state line="18" column="0" selection-start="899" selection-end="899" vertical-scroll-proportion="0.45472062">
               <folding />
             </state>
           </provider>
@@ -539,7 +536,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="1001" selection-end="2647" vertical-scroll-proportion="1.5297505">
+        <state line="18" column="0" selection-start="899" selection-end="899" vertical-scroll-proportion="0.45472062">
           <folding />
         </state>
       </provider>
