@@ -2,7 +2,7 @@ jQuery(function ($) {
     $.supersized({
         slides: [
             {
-                image: 'img/DSC00526.JPG', title: ''
+                image: 'img/Yin-Yoga-Melbourne-East.JPG', title: 'Yin Yoga Melbourne'
             }
         ]
     });
