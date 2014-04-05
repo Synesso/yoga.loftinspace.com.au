@@ -31,7 +31,6 @@ header h1 {
 #subheading{
     font-family: 'Leckerli One', cursive;
     color: white;
-    /*text-shadow: 2px 2px rgba(0, 0, 0, 0.74);*/
     font-size: 2em;
     margin-top: 5px;
    
@@ -75,3 +74,33 @@ footer p {
     margin-top: 10px;
 }
 
+nav {
+    font-family: 'Rosario', sans-serif;
+    font-style: italic;
+    margin: 0 5% 0 auto;
+}
+
+ul {
+    margin-left: 80%;
+}
+
+ul li {
+    float: left;
+    margin-right: 2em;
+    border: 1px solid azure;
+    border-radius: 18px;
+    padding: 2px 7px;
+}
+
+ul li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    color: azure;
+}
+
+.nav-current {
+    background-color: azure;
+    color: #424242;
+}
