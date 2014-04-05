@@ -1,0 +1,80 @@
+#top-line {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#top-line header {
+    font-family: 'Leckerli One', cursive;
+    color: #444444;
+}
+
+#top-line header * {
+    font-weight: normal;
+}
+
+#top-line header h1 {
+    font-size: 4em;
+    margin: 20px 0 0 0;
+}
+
+#top-line header h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+#logo {
+    margin: 25px 30px;
+    height: 100px;
+}
+
+#logo, header {
+    float: left;
+    width: auto;
+}
+
+#body {
+    margin: 0 auto;
+    width: 50%;
+    color: #444444;
+}
+
+#body p {
+    font: 22px/1.5 'Petrona', Georgia, serif;
+}
+
+#about img {
+    float: right;
+    margin: 0 0 20px 40px;
+    height: 300px; /* TODO - resize the image */
+    box-shadow: 10px 10px 5px #888888;
+}
+
+section header {
+    font-size: 2em;
+    font-family: 'Rosario', sans-serif;
+    float: none;
+    text-align: center;
+}
+
+
+footer {
+    font-family: 'Rosario', sans-serif;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    bottom: 0;
+    text-align: center;
+    color: azure;
+}
+
+footer p {
+    margin-top: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    font-style: italic;
+    color: yellowgreen;
+}
+
