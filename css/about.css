@@ -1,3 +1,7 @@
+nav {
+    float:right;
+}
+
 #top-line {
     width: 80%;
     margin: 0 auto;
@@ -34,7 +38,7 @@
 
 #body {
     margin: 0 auto;
-    width: 50%;
+    width: 800px;
     color: #444444;
 }
 
@@ -44,8 +48,8 @@
 
 #about img {
     float: right;
-    margin: 0 0 20px 40px;
-    height: 300px; /* TODO - resize the image */
+    margin: 20px 0 20px 40px;
+    height: 270px;
     box-shadow: 10px 10px 5px #888888;
 }
 
@@ -78,3 +82,13 @@ footer a {
     color: yellowgreen;
 }
 
+#round-photo {
+    margin: 0 40px 20px 0;
+    float: left;
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+    -webkit-border-radius: 125px;
+    -moz-border-radius: 125px;
+    background: url(../img/Yin-Yoga-About.jpg) no-repeat;
+}
