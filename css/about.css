@@ -1,31 +1,36 @@
 a {
     text-decoration: none;
-    font-style: italic;
+    /*font-style: italic;*/
     color: #444444;
 }
 
 nav {
     float:right;
     font-family: 'Rosario', sans-serif;
-    font-style: italic;
-    margin: 0 5% 0 auto;
+    /*font-style: italic;*/
+    margin: 5px 0 0 auto;
+}
+ul{
+    margin:20px 10px 0 0;
 }
 
 nav li {
     float: left;
     margin: 15px 40px 0 0;
-    border: 1px solid #424242;
-    border-radius: 18px;
-    padding: 2px 7px;
+    /*border: 1px solid #424242;*/
+    /*border-radius: 18px;*/
+    /*padding: 2px 7px;*/
 }
 
 .nav-current {
-    background-color: #444444;
-    color: white;
+    /*background-color: #444444;*/
+    /*color: white;*/
+    color: rgb(104, 104, 104);
+    font-weight: bold;
 }
 
 #top-line {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -49,13 +54,17 @@ nav li {
 }
 
 #logo {
-    margin: 25px 30px;
-    height: 100px;
+    margin: 25px 30px 0 100px;
+    height: 80px;
 }
 
 #logo, header {
     float: left;
     width: auto;
+}
+h2{
+    margin-top:1%;
+    font-family:Trebuchet MS, Arial, Helvetica, sans-serif;;
 }
 
 #body {
@@ -65,7 +74,9 @@ nav li {
 }
 
 #body p {
-    font: 22px/1.5 'Petrona', Georgia, serif;
+    font: 18px/1.5 Trebuchet MS, Arial, Helvetica, sans-serif;
+    /*font: 18px/1.8 "Open Sans","lucida grande","Segoe UI",arial,verdana,"lucida sans unicode",tahoma,sans-serif;*/
+    /*font-weight: 600;*/
 }
 
 #about img {
