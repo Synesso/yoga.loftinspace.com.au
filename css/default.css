@@ -66,6 +66,11 @@ header h2 {
     font-family: 'Rosario', sans-serif;
     font-style: italic;
 }
+#logo {
+    margin: 25px 30px 0 100px;
+    height: 80px;
+}
+
 #article{
     float: left;
 }
