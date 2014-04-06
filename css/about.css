@@ -1,13 +1,11 @@
 a {
     text-decoration: none;
-    /*font-style: italic;*/
     color: #444444;
 }
 
 nav {
     float:right;
     font-family: 'Rosario', sans-serif;
-    /*font-style: italic;*/
     margin: 5px 0 0 auto;
 }
 ul{
@@ -17,14 +15,9 @@ ul{
 nav li {
     float: left;
     margin: 15px 40px 0 0;
-    /*border: 1px solid #424242;*/
-    /*border-radius: 18px;*/
-    /*padding: 2px 7px;*/
 }
 
 .nav-current {
-    /*background-color: #444444;*/
-    /*color: white;*/
     color: rgb(104, 104, 104);
     font-weight: bold;
 }
@@ -49,8 +42,11 @@ nav li {
 }
 
 #top-line header h2 {
-    margin-top: 0;
+    margin-top: 14px;
     text-align: center;
+    font-family: 'Leckerli One', cursive;
+    color: #444444;
+    font-style: italic;
 }
 
 #logo {
@@ -62,9 +58,14 @@ nav li {
     float: left;
     width: auto;
 }
+#subheading{
+    font-family: 'Leckerli One', cursive;
+    font-size: 1.4em;
+    margin-top: 5px;
+}
 h2{
     margin-top:1%;
-    font-family:Trebuchet MS, Arial, Helvetica, sans-serif;;
+    font-family:Trebuchet MS, Arial, Helvetica, sans-serif;
 }
 
 #body {
