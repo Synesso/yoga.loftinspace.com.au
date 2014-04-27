@@ -1,8 +1,9 @@
+@charset "UTF-8";
+/*Navigation*/
 a {
     text-decoration: none;
     color: #444444;
 }
-
 nav {
     float:right;
     font-family: 'Rosario', sans-serif;
@@ -11,7 +12,6 @@ nav {
 ul{
     margin:20px 10px 0 0;
 }
-
 nav li {
     float: left;
     margin: 15px 40px 0 0;
@@ -22,7 +22,7 @@ nav li {
     color: rgb(104, 104, 104);
     font-weight: bold;
 }
-
+/*Logo & Header*/
 #top-line {
     width: 90%;
     margin: 0 auto;
@@ -45,53 +45,50 @@ nav li {
 #top-line header h2 {
     margin-top: 14px;
     text-align: center;
+    font-size: 1.4em;
     font-family: 'Leckerli One', cursive;
     color: #444444;
     font-style: italic;
 }
-
 #logo {
     margin: 25px 30px 0 100px;
     height: 80px;
     border: 0;
 }
-
 #logo, header {
     float: left;
     width: auto;
 }
-#subheading{
-    font-family: 'Leckerli One', cursive;
-    font-size: 1.4em;
-    margin-top: 5px;
-}
-h2{
-    margin-top:1%;
-    font-family:Trebuchet MS, Arial, Helvetica, sans-serif;
-}
-
+/*Main text*/
 #body {
     margin: 0 auto;
     width: 800px;
     color: #444444;
 }
-
-
-
-#about img {
+h2{
+    margin-top:1%;
+    /*font-family:Trebuchet MS, Arial, Helvetica, sans-serif;*/
+    font-family: 'Rosario', sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+h3{
+    margin-top:1%;
+    /*font-family:Trebuchet MS, Arial, Helvetica, sans-serif;*/
+    /*font-size: 0.8em;*/
+    font: 16px/1.5 Trebuchet MS, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#yin-yoga-daoism {
     float: right;
-    margin: 20px 0 20px 40px;
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 270px;
     height: 270px;
-    box-shadow: 10px 10px 5px #888888;
-}
-
-#about h2 {
-    margin-bottom: 0.1em;
-}
-
-#about header p {
-    margin-top: 0;
-    font-size: 0.5em;
+    border-radius: 125px;
+    -webkit-border-radius: 125px;
+    -moz-border-radius: 125px;
+    background: url(../img/Yin-Yoga-Daoism.jpg) no-repeat;
 }
 article {
     margin: 0 auto;
@@ -99,21 +96,98 @@ article {
     color: #444444;
     font: 18px/1.5 Trebuchet MS, Arial, Helvetica, sans-serif;
 }
-#yang {
-    font-size: 1em;
-    font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
-    float: left;
-    text-align: left;
+article h2 {
+    margin-bottom: 0;
+    margin-top: 20px;
 }
-#yin {
-    font-size: 1em;
-    font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+img{
+    margin: auto;
+    display: block;
+}
+/*#yang {*/
+    /*font-size: 1em;*/
+    /*font-family: Trebuchet MS, Arial, Helvetica, sans-serif;*/
+    /*float: left;*/
+    /*text-align: left;*/
+    /*background-color: lightgray;*/
+/*}*/
+/*#yin {*/
+    /*font-size: 1em;*/
+    /*font-family: Trebuchet MS, Arial, Helvetica, sans-serif;*/
+    /*float: right;*/
+    /*margin-right: 15%;*/
+    /*text-align: left;*/
+    /*background-color: lightgray;*/
+/*}*/
+/*.clear{*/
+    /*clear: both;*/
+
+/*}*/
+h3 {
+    margin-left: 20px;
+}
+#quote,#research1,#research2{
+    font-family: 'Rosario', sans-serif;
+    font-style: italic;
+}
+#research1,#research2{
+    -webkit-box-shadow: 4px 4px 5px 0 rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    4px 4px 5px 0 rgba(50, 50, 50, 0.75);
+    box-shadow:         4px 4px 5px 0 rgba(50, 50, 50, 0.75);
+
+}
+
+#quote{
+    text-align: center;
+}
+#research1{
     float: left;
-    text-align: right;
+    font-size: 0.9em;
+    text-align: left;
+    padding: 2px 8px 2px 8px;
+    width: 350px;
+    color:#936D24;
+    border:#936D24;
+    border-width:10px;
+
+    /*gradient;*/
+    background-image: -webkit-gradient(
+        linear,
+        right top,
+        left bottom,
+        color-stop(0.45, #F7FAF7),
+        color-stop(0.87, #DFEBE1)
+    );
+    background-image: -o-linear-gradient(left bottom, #F7FAF7 45%, #DFEBE1 87%);
+    background-image: -moz-linear-gradient(left bottom, #F7FAF7 45%, #DFEBE1 87%);
+    background-image: -webkit-linear-gradient(left bottom, #F7FAF7 45%, #DFEBE1 87%);
+    background-image: -ms-linear-gradient(left bottom, #F7FAF7 45%, #DFEBE1 87%);
+    background-image: linear-gradient(to left bottom, #F7FAF7 45%, #DFEBE1 87%);
+}
+#research2{
+    float: right;
+    font-size: 0.9em;
+    text-align: left;
+    padding: 2px 8px 2px 8px;
+    width: 380px;
+    color:#936D24;
+    border:#936D24;
+    border-width:10px;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right bottom,
+        color-stop(0.45, #F7FAF7),
+        color-stop(0.87, #DFEBE1)
+    );
+    background-image: -o-linear-gradient(right bottom, #F7FAF7 45%, #DFEBE1 87%);
+    background-image: -moz-linear-gradient(right bottom, #F7FAF7 45%, #DFEBE1 87%);
+    background-image: -webkit-linear-gradient(right bottom, #F7FAF7 45%, #DFEBE1 87%);
+    background-image: -ms-linear-gradient(right bottom, #F7FAF7 45%, #DFEBE1 87%);
+    background-image: linear-gradient(to right bottom, #F7FAF7 45%, #DFEBE1 87%);
 }
 .clear{
     clear: both;
-
 }
 footer {
     font-family: 'Rosario', sans-serif;
@@ -136,13 +210,3 @@ footer a {
     color: yellowgreen;
 }
 
-#round-photo {
-    margin: 0 40px 20px 0;
-    float: left;
-    width: 250px;
-    height: 250px;
-    border-radius: 125px;
-    -webkit-border-radius: 125px;
-    -moz-border-radius: 125px;
-    background: url(../img/Yin-Yoga-About.jpg) no-repeat;
-}
