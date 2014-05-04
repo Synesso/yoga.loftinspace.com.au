@@ -67,17 +67,16 @@ nav li {
 }
 h2{
     margin-top:1%;
-    /*font-family:Trebuchet MS, Arial, Helvetica, sans-serif;*/
     font-family: 'Rosario', sans-serif;
     font-size: 2em;
     text-align: center;
 }
 h3{
     margin-top:1%;
-    /*font-family:Trebuchet MS, Arial, Helvetica, sans-serif;*/
-    /*font-size: 0.8em;*/
+    margin-left: 20px;
     font: 16px/1.5 Trebuchet MS, Arial, Helvetica, sans-serif;
     text-align: center;
+
 }
 #yin-yoga-daoism {
     float: right;
@@ -104,52 +103,32 @@ img{
     margin: auto;
     display: block;
 }
-/*#yang {*/
-    /*font-size: 1em;*/
-    /*font-family: Trebuchet MS, Arial, Helvetica, sans-serif;*/
-    /*float: left;*/
-    /*text-align: left;*/
-    /*background-color: lightgray;*/
-/*}*/
-/*#yin {*/
-    /*font-size: 1em;*/
-    /*font-family: Trebuchet MS, Arial, Helvetica, sans-serif;*/
-    /*float: right;*/
-    /*margin-right: 15%;*/
-    /*text-align: left;*/
-    /*background-color: lightgray;*/
-/*}*/
-/*.clear{*/
-    /*clear: both;*/
 
-/*}*/
-h3 {
-    margin-left: 20px;
-}
 #quote,#research1,#research2{
+    font-family: 'Rosario', sans-serif;
+    font-style: italic;
+    color:#7A5C24;
+}
+#quote, #caption{
+    text-align: center;
+}
+#caption{
     font-family: 'Rosario', sans-serif;
     font-style: italic;
 }
 #research1,#research2{
-    -webkit-box-shadow: 4px 4px 5px 0 rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    4px 4px 5px 0 rgba(50, 50, 50, 0.75);
-    box-shadow:         4px 4px 5px 0 rgba(50, 50, 50, 0.75);
-
-}
-
-#quote{
-    text-align: center;
-}
-#research1{
-    float: left;
     font-size: 0.9em;
     text-align: left;
     padding: 2px 8px 2px 8px;
-    width: 350px;
     color:#936D24;
-    border:#936D24;
-    border-width:10px;
+    -webkit-box-shadow: 4px 4px 5px 0 rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    4px 4px 5px 0 rgba(50, 50, 50, 0.75);
+    box-shadow:         4px 4px 5px 0 rgba(50, 50, 50, 0.75);
+}
 
+#research1{
+    float: left;
+    width: 350px;
     /*gradient;*/
     background-image: -webkit-gradient(
         linear,
@@ -166,13 +145,7 @@ h3 {
 }
 #research2{
     float: right;
-    font-size: 0.9em;
-    text-align: left;
-    padding: 2px 8px 2px 8px;
     width: 380px;
-    color:#936D24;
-    border:#936D24;
-    border-width:10px;
     background-image: -webkit-gradient(
         linear,
         left top,
